@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4">
+      <div className="container mx-auto flex items-center justify-between h-20 px-4">
         <a href="#" className="text-xl font-bold text-primary tracking-tight">
-          UdyamiHub
+          <img src="/src/images/UdyamiHub-Dark.png" alt="UdyamiHub Logo" className="h-12" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -28,7 +28,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <Button size="sm">Get Started Free</Button>
+          <Button size="sm">Log In</Button>
         </div>
 
         <button
@@ -52,7 +52,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <Button size="sm" className="w-full">Get Started Free</Button>
+          <Button size="sm" className="w-full">Log In</Button>
         </div>
       )}
     </nav>
